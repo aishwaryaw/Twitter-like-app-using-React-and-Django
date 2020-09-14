@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <p>{{ title }}</p>
+    {% if description %}
+    <p> {{ description }}</p>
+    {% endif %}
+
+    {% include 'components/form.html' with form=form btn_label=btn_label %}
+
+</div>
+
+{% endblock content %}

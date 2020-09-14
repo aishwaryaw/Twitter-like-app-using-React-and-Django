@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+<div id="tweetme-feed" data-can-tweet="true"></div>
+
+{% else %}
+<div id="tweetme" data-can-tweet="false"></div>
+
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,6 @@
+
+{% for tweet in tweets %}
+<p> {{tweet.content}} </p>
+<p> {{ tweet.user.username }}</p>
+<p> {{ tweet.likes }} </p>
+{% endfor %}
